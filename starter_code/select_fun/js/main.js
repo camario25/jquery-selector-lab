@@ -14,9 +14,25 @@
 	// b) Add the crazy class to the h1
 	// c) Slide toggle #box3
 
+  $(".box").addClass("fun");
+
+  $("#box2").on("click", function(){
+    $(".box").removeClass("crazy");
+    $("h1").addClass("crazy");
+    $("#box3").slideToggle("slow", function(){
+
+    });
+
+  });
+
 
 // 4. When any .box is clicked, change the text in the header's h1 tag to read "jQuery Ninja"
 
+$(".box").on("click", function (){
+$("h1").text("jQuery Ninja");
+
+
+})
 
 // 5. When #box1 is clicked on
 	// a) Run the following line of code: $(".moto").attr("src", "images/moto.jpg");
